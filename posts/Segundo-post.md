@@ -1,8 +1,8 @@
 ---
-title: Transformando seu negócio em uma loja virtual
-description: Se você está buscando uma maneira simples e eficaz de vender seus produtos online, o Site.Set é a solução perfeita para você.
-date: 2024/12/20
-image: /assets/primeiro-post2.png
+title: 5 Motivos para escolher o Site.Set
+description: O Site.Set oferece tudo o que você precisa para criar uma loja online eficiente e personalizada. Desde a integração com sistemas de pagamento.
+date: 2024/11/16
+image: /assets/segundo-post.png
 author:
   name: Aspen Dokidis
   avatar: /customer-01.png
