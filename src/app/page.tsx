@@ -4,10 +4,7 @@ import { LandingPage } from "@/templates/landing-page";
 export const metadata: Metadata = {
   title: "Site.Set",
   description: "Venda seus produtos como afiliado em um único lugar",
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: 'index, follow',
   openGraph: {
     title: "Site.Set",
     description: "Venda seus produtos como afiliado em um único lugar",
