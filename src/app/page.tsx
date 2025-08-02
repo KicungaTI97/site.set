@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg", 
+        url: "https://site-set-4j7z.vercel.app/og-image.jpg", 
         width: 1200,
         height: 630,
         alt: "Site.Set - Venda seus produtos como afiliado em um único lugar",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Site.Set",
     description: "Venda seus produtos como afiliado em um único lugar",
-    images: ["/og-image.jpg"],
+    images: ["https://site-set-4j7z.vercel.app/og-image.jpg"],
   },
 
 };
