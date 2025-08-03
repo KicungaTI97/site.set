@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { allPosts } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { PostPage } from "@/templates/blog";
@@ -8,6 +9,27 @@ type BlogPostPageProps = {
 	}>;
 };
 
+export async function  generateMetadata({ params }:BlogPostPageProps):Promise<Metadata>{
+ const {slug} = await params;
+ const post = allPosts.find((post) => post.slug === slug);
+
+ if(!post){
+  return{}
+ }
+
+ return{
+  title: post.title,
+  description: post.description,
+  authors:[
+    {name: post.author.name}
+  ],
+  robots: 'idex, follow',
+  openGraph:{
+    images: post.image ? [{url: post.image}] : []
+  }
+  
+ }
+}
 export const revalidate = 60; // Revalidate every 60 seconds
 export async function generateStaticParams() {
   const posts = allPosts.map((post) => ({
